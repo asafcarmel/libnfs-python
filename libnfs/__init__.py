@@ -46,8 +46,8 @@ class NFSFH(object):
 
         if codec:
             self._codec = codec
-        elif sys.version_info[0] > 2:
-            self._codec = 'utf-8'
+        # elif sys.version_info[0] > 2:
+        #     self._codec = 'utf-8'
         else:
             self._codec = None
         self._binary = True if 'b' in mode else False
